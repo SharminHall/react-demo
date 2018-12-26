@@ -1,0 +1,12 @@
+.btn-stopwatch {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  outline: 0;
+}
+.btn-stopwatch:focus {
+  outline: 0;
+}
+.btn-stopwatch + .btn-stopwatch {
+  margin-left: 35px;
+}

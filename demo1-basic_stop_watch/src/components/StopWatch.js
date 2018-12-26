@@ -14,9 +14,16 @@ class StopWatch extends Component {
   render () {
     return (
       <Fragment>
-        <MajorClock milliseconds={this.state.currentTime - this.state.startTime} />
+        <style jsx>{`
+          h1 {
+            color: red;
+            font-family: monospace
+          }
+        `}</style>
+        <h1>秒表</h1>
+        <MajorClock milliseconds={this.state.currentTime - this.state.startTime} activated={this.state.isStart} />
         <ControllButtons
-          activated={this.state.isStarted}
+          activated={this.state.isStart}
           onStart={this.onStart}
           onPause={this.onPause}
           onReset={this.onReset}
